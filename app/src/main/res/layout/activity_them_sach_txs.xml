@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ThemSach_TXS"
+    android:background="#DCD9D9">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#F6CFCF">
+
+        <ImageView
+            android:id="@+id/ivthoat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/thoat"/>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Thêm Sách"
+            android:textSize="30dp"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#DCD9D9">
+        <LinearLayout
+            android:background="@drawable/boder_edittext"
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:src="@drawable/sacha"
+                android:layout_width="80dp"
+                android:layout_height="110dp"
+                android:id="@+id/ivhinh_Themsach"/>
+            <Spinner
+                android:layout_width="220dp"
+                android:layout_height="50dp"
+                android:id="@+id/spThemSach"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mã Sách"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:background="@drawable/boder_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="nhập tên sách"
+                android:id="@+id/edtmasach_themsach"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên Sách"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:background="@drawable/boder_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="nhập tên sách"
+                android:id="@+id/edttensach_themsach"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Số lượng"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:background="@drawable/boder_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="nhập số lượng"
+                android:id="@+id/edtsoluong_themsach"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nội dung"
+                android:textSize="20dp"
+                android:layout_marginLeft="10dp"/>
+            <EditText
+                android:background="@drawable/boder_edittext"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="nhập nội dung"
+                android:id="@+id/edtNoidung_themsach"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp">
+            <Button
+                android:layout_width="380dp"
+                android:layout_height="65dp"
+                android:textColor="@color/black"
+                android:backgroundTint="#F69595"
+                android:text="Thêm"
+                android:textSize="25dp"
+                android:id="@+id/btnthem_themsach"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

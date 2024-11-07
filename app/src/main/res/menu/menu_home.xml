@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+ <item android:id="@+id/mnsachmuon"
+      android:icon="@drawable/muontrasach"
+      android:title="Sách mượn"
+     />
+    <item android:id="@+id/mncrudsach"
+        android:icon="@drawable/book"
+        android:title="CRUD Sách"
+        />
+    <item android:id="@+id/mnthongke"
+        android:icon="@drawable/thongke"
+        android:title="Thống kê"
+        />
+    <item android:id="@+id/mnsetting"
+        android:icon="@drawable/settings"
+        android:title="Cài đặt"
+        />
+</menu>

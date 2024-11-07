@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".trasach">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#F6CFCF">
+
+        <ImageView
+            android:id="@+id/ivthoat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/thoat"/>
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Chi tiết Sách"
+            android:textSize="30dp"
+            android:gravity="center"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <ImageView
+            android:id="@+id/ivhinh_sachtra"
+            android:layout_marginTop="10dp"
+            android:layout_width="200dp"
+            android:layout_height="300dp"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Mã Sách"
+            android:textSize="20dp"
+            android:id="@+id/tvmasachtra"/>
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="30dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tên Sách"
+            android:textSize="20dp"
+            android:id="@+id/tvtensachtra"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="70dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <Button
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Trả sách"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:id="@+id/btntrasach"
+            android:backgroundTint="#2196F3"
+            />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

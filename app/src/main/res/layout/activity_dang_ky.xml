@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dang_ky">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Quản Lý Thư Viện"
+        android:textSize="40dp"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="Đăng ký tài khoản"
+                android:gravity="center_horizontal"
+                android:textSize="30dp"
+                android:textColor="#3BDC0F"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="30dp"/>
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/border_dangnhap">
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <EditText
+                    android:id="@+id/edtsodienthoai_dangky"
+                    android:inputType="number"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/boder_edittext"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="tên đăng nhập"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <EditText
+                    android:id="@+id/edttendangnhap_dangky"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/boder_edittext"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mật khẩu"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/edtmatkhau_dangky"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/boder_edittext"/>
+                <TextView
+                    android:layout_marginTop="20dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Nhập lại mật khẩu"
+                    android:gravity="center"
+                    android:textSize="20dp"/>
+                <EditText
+                    android:inputType="textPassword"
+                    android:id="@+id/edtnhaplaimatkhau_dangky"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/boder_edittext"/>
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+                    <RadioButton
+                        android:id="@+id/rdadmin"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="admin"
+                        android:textSize="20dp"
+                        android:layout_marginRight="50dp"/>
+                    <RadioButton
+                        android:id="@+id/rduser"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="user"
+                        android:textSize="20dp"/>
+                </RadioGroup>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnOK_dangky"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:text="OK"
+        android:backgroundTint="#0FAE03"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</LinearLayout>

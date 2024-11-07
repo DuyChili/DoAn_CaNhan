@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/thuvien"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/thuvien"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DoAn_CaNhan"
+        tools:targetApi="34">
+
+        <activity
+            android:name=".dang_ky"
+            android:exported="false" />
+        <activity
+            android:name=".Homes"
+            android:exported="false" />
+        <activity
+            android:name=".ThongTinSach_TXS"
+            android:exported="false" />
+        <activity
+            android:name=".ThemSach_TXS"
+            android:exported="false" />
+        <activity
+            android:name=".Sach_TXS"
+            android:exported="false" />
+        <activity
+            android:name=".Caidat"
+            android:exported="false" />
+        <activity
+            android:name=".muon_sach"
+            android:exported="false" />
+        <activity
+            android:name=".trasach"
+            android:exported="false" />
+        <activity
+            android:name=".ThongKe_Sach"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".dang_nhap"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

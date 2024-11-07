@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".dang_nhap">
+
+     <TextView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Quản Lý Thư Viện"
+         android:textSize="40dp"
+         android:gravity="center"
+         android:layout_marginTop="100dp"
+         />
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:orientation="vertical"/>
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/border_dangnhap">
+            <TextView
+                android:layout_marginTop="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tên đăng nhập"
+                android:gravity="center"
+                android:textSize="20dp"/>
+            <EditText
+                android:id="@+id/edttendangnhap"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/boder_edittext"/>
+            <TextView
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu"
+                android:gravity="center"
+                android:textSize="20dp"/>
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/edtmatkhau"
+                android:layout_marginTop="10dp"
+                android:layout_width="300dp"
+                android:layout_height="40dp"
+                android:background="@drawable/boder_edittext"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quên mật khẩu?"
+                    android:textSize="18dp"
+                    android:textColor="#FB0303"/>
+                <TextView
+                    android:id="@+id/tvdangkytaikhoan"
+                    android:layout_marginLeft="70dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Đăng ký tài khoản"
+                    android:textSize="18dp"
+                    android:textColor="#FB0303"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        </LinearLayout>
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/canhan"
+            android:layout_gravity="center"
+            android:layout_marginBottom="100dp"/>
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:text="OK"
+        android:backgroundTint="#0FAE03"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+</LinearLayout>
